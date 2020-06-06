@@ -1,66 +1,15 @@
-* {
-		box-sizing: border-box;
-	}
-	body {
-		background-color: #9E8851;
-	}
-	h1 {
-		margin: 100px;
-		text-align: center;
-		font-family: Helvetica;
-		font-weight: bold;
-		font-size: 175%;
-	}
-	section {
-		position: relative;
-		padding: 15px;
-		width: 100%;
-	}
-	p {
-		position: relative;
-		clear: right;
-	}
-	div {
-		position: relative;
-		background-color: #BF7F3F;
-		border: 1px solid black;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: auto;
-	}
-	.sub {
-		float: right;
-		width: 100px;
-		padding: 5px;
-		margin: 0px;
-		border: 1px solid black;
-		text-align: center;
-		font-size: 125%;
-		font-weight: bold;
-		background-color: #B0D619;
-
-	}
-	.content {
-		padding: 5px;
-		border: none;
-		background-color: #BF7F3F;
-		font-family: Helvetica;
-		color: black;
-		margin: 0px;
-		height: 200px;
-		overflow: auto;
-	}
-
-	.row {
-		width: 90%;
-	}
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assigment2-solution</title>
+</head>
+<style >
 	* {
 		box-sizing: border-box;
 	}
 	body {
-		background-color: #9E8851;
+		background-color: white;
 	}
 	h1 {
 		margin: 100px;
@@ -80,14 +29,14 @@
 	}
 	div {
 		position: relative;
-		background-color: #BF7F3F;
+		background-color: gray;
 		border: 1px solid black;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: auto;
 	}
-	.sub {
+	.sub1 {
 		float: right;
 		width: 100px;
 		padding: 5px;
@@ -96,13 +45,39 @@
 		text-align: center;
 		font-size: 125%;
 		font-weight: bold;
-		background-color: #B0D619;
+		background-color: white;
+
+	}
+	.sub2 {
+		float: right;
+		color: white;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: maroon;
+
+	}
+	.sub3 {
+		color: black;
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: tomato;
 
 	}
 	.content {
 		padding: 5px;
 		border: none;
-		background-color: #BF7F3F;
+		background-color: gray;
 		font-family: Helvetica;
 		color: black;
 		margin: 0px;
@@ -133,9 +108,32 @@
 			margin-right: auto;
 		}
 	}
-	@media (max-width: 767px){
+		@media (max-width: 767px){
 		.colmn-sm-12 {
 			float: left;
 			width: 100%;
 		}
 	}
+</style>
+<body >
+<h1>OUR MENU</h1>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="sub1">Chicken</p>
+			<p class="content">
+			 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenat Cras ac leo purus. Mauris quis diam velit.</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="sub2">Beef</p>
+			<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
+	<div>
+		<p class="sub3">sushi</p>
+			<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</p>
+	</div>
+</body>
+</html>
